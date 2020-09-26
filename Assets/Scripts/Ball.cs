@@ -10,7 +10,8 @@ public class Ball : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.name == "WallLeft" || collision.gameObject.name == "WallRight") {
-            Destroy(gameObject);
+            gameObject.transform.position = new Vector2(0, 0);
+            GetComponent<Rigidbody2D>().velocity = new Vector2(speed, 0);
         }
 
         if (collision.gameObject.name == "RacketLeft") {
