@@ -9,6 +9,10 @@ public class Ball : MonoBehaviour {
     }
 
     void OnCollisionEnter2D(Collision2D collision) {
+        if (collision.gameObject.name == "WallLeft" || collision.gameObject.name == "WallRight") {
+            Destroy(gameObject);
+        }
+
         if (collision.gameObject.name == "RacketLeft") {
             float y = hitFactor(transform.position,
                                 collision.transform.position,
