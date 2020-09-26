@@ -9,7 +9,7 @@ public class Ball : MonoBehaviour {
     }
 
     void OnCollisionEnter2D(Collision2D collision) {
-        if (collision.gameObject.name == "Left Racket") {
+        if (collision.gameObject.name == "RacketLeft") {
             float y = hitFactor(transform.position,
                                 collision.transform.position,
                                 collision.collider.bounds.size.y);
@@ -20,8 +20,7 @@ public class Ball : MonoBehaviour {
             GetComponent<Rigidbody2D>().velocity = dir * speed;
         }
 
-        // Hit the right Racket?
-        if (collision.gameObject.name == "Right Racket") {
+        if (collision.gameObject.name == "RacketRight") {
             float y = hitFactor(transform.position,
                                 collision.transform.position,
                                 collision.collider.bounds.size.y);
