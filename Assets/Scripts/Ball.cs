@@ -18,7 +18,6 @@ public class Ball : MonoBehaviour {
             float y = hitFactor(transform.position,
                                 collision.transform.position,
                                 collision.collider.bounds.size.y);
-            Debug.Log("New Y is : " + y);
 
             Vector2 dir = new Vector2(1, y).normalized;
 
