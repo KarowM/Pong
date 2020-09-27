@@ -840,6 +840,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 50291655}
+  explosion: {fileID: 9044409676931583017, guid: 61452165f02ed2746afb0635985f3064, type: 3}
 --- !u!1 &910819459
 GameObject:
   m_ObjectHideFlags: 0
@@ -1336,6 +1337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1217825424}
+  explosion: {fileID: 9044409676931583017, guid: 61452165f02ed2746afb0635985f3064, type: 3}
 --- !u!1 &1942302781
 GameObject:
   m_ObjectHideFlags: 0
